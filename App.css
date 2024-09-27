@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.reel-container {
+  height: 100vh;
+  display: none;
+}
+
+.reel-container.active {
+  display: block;
+}
+
+.reel-media {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+}
+
+.product-info {
+ justify-content: space-between; 
+   align-items: center;
+ padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+position: flex;
+  bottom: 60px;
+width: 100%; 
+padding:12px -14px 3px 3px;
+  
+}
+
+.product-left p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+}
+
+.shop-button {
+  background-color: #6a0dad;
+  color: white;
+  padding: 13px 12px 10px 12px;
+  margin: 13px 12px 35px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-item {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-item.active {
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.media-container {
+  flex: 1;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none; /* Hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.media-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.media-item {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-item img, .media-item video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+} */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+}

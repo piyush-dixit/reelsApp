@@ -1,0 +1,49 @@
+/* Card.css */
+.card {
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-info {
+    margin-top: 10px;
+  }
+  
+  .card-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-price {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .card-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #6200ee;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-button:hover {
+    background-color: #4500b5;
+  }
+  
